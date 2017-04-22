@@ -16,6 +16,10 @@ ul {
     color: #fff;
 }
 
+#random-article {
+    color: #aff;
+}
+
 #random-article:hover {
     color: #aaf;
 }
@@ -49,7 +53,7 @@ ul {
     border-radius: 5px;
     display: inline-block;
     font-size: 0px;
-    margin: 30px 0 0 60px;
+    margin: 30px 0 0 45px;
     padding: 20px;
     position: relative;
     z-index: 1;
