@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="./custom.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link href="./custom.css" rel="stylesheet" type="text/css">
+
+<head>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="col-xs-4 col-xs-offset-4">
+      <section class="search-form">
+        <form action="javascript:accessWiki();" method="">
+          <input type="search" placeholder="search on Wikipedia" id="title">
+          <button>Search</button>
+        </form>
+      </section>
+      <p class="text text-center" id="hint">or get random article <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><span id="random-article">HERE</span></a></p>
+    </div>
+
+    <ul class="col-xs-10 col-xs-offset-1 responses">
+    </ul>
+  </div>
+</body>
+
+</html>
