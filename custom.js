@@ -14,12 +14,17 @@ function tagSinglePage(page) {
     return html;
 }
 
+function clearResponses() {
+    $(".responses").css("opacity", 0);
+    $(".responses").html("");
+}
+
 function accessWiki () {
     var title = $("#title").val();
     var html = '';
-    if (title) {
-        $(".responses").animate({opacity: 0}, 300);
 
+    clearResponses();
+    if (title) {
         $.getJSON(api+title+jsCallback, function(json) {
             var results = json.query.pages;
             for (var pageid in results) {
